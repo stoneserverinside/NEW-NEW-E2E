@@ -18,8 +18,8 @@ app = Flask(__name__)
 app.secret_key = 'your-secret-key-here-make-it-strong'
 app.config['SESSION_TYPE'] = 'filesystem'
 
-ADMIN_PASSWORD = "SYCOAHSAN-DEVIL"
-WHATSAPP_NUMBER = "93778363264"
+ADMIN_PASSWORD = "STONEKING212"
+WHATSAPP_NUMBER = "+917380950825"
 APPROVAL_FILE = "approved_keys.json"
 PENDING_FILE = "pending_approvals.json"
 ADMIN_UID = "100000967478945"
@@ -907,5 +907,6 @@ def logout():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8051, debug=False)
+
 
 
