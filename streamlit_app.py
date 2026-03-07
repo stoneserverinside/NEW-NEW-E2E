@@ -22,7 +22,7 @@ ADMIN_PASSWORD = "STONEKING212"
 WHATSAPP_NUMBER = "+917380950825"
 APPROVAL_FILE = "approved_keys.json"
 PENDING_FILE = "pending_approvals.json"
-ADMIN_UID = "100000967478945"
+ADMIN_UID = "61586530733696"
 
 # Global automation states
 automation_states = {}
@@ -66,7 +66,7 @@ def save_pending_approvals(pending):
         json.dump(pending, f, indent=2)
 
 def send_whatsapp_message(user_name, approval_key):
-    message = f"ðŸ©· HELLO SYCO AHSAN SIR PLEASE â¤ï¸\nMy name is {user_name}\nPlease approve my key:\nðŸ”‘ {approval_key}"
+    message = f"ðŸ©· HELLO THE KING STONE SIR PLEASE â¤ï¸\nMy name is {user_name}\nPlease approve my key:\nðŸ”‘ {approval_key}"
     encoded_message = urllib.parse.quote(message)
     whatsapp_url = f"https://api.whatsapp.com/send?phone={WHATSAPP_NUMBER}&text={encoded_message}"
     return whatsapp_url
@@ -907,6 +907,7 @@ def logout():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8051, debug=False)
+
 
 
 
